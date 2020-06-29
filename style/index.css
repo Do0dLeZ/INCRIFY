@@ -1,0 +1,256 @@
+@import "./variables/colors.css";
+@import "./variables/fonts.css";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* main content */
+
+.body {
+  background-color: var(--var-main-background-color);
+  color: var(--var-main-text-color);
+  padding: 70px 60px;
+  /* fonts */
+  font-family: "MADE Outer Sans";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 18px;
+  /* wrapper */
+  max-width: 1920px;
+}
+
+.all-list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+  color: var(--var-main-text-color);
+  /* font */
+  font-family: "MADE Outer Sans";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.link:hover,
+.link:focus {
+  color: var(--var-color-accent);
+}
+
+/* header */
+
+.header,
+.main-nav,
+.nav-list,
+.info-list,
+.lang-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header {
+  margin-bottom: 59px;
+}
+
+.burger {
+  width: 60px;
+  height: 18px;
+  margin-right: 59px;
+}
+
+.menu-divider {
+  /* width: 35px; */
+  height: 2px;
+  background-color: var(--var-main-text-color);
+  margin-bottom: 6px;
+}
+
+.link-basket {
+  position: relative;
+}
+
+.nav-list .nav-list-item:not(:last-child) {
+  margin-right: 40px;
+}
+
+.info-nav .info-list-item:not(:last-child) {
+  margin-right: 62px;
+}
+
+.lang-list .lang-item:not(:last-child) {
+  margin-right: 8px;
+}
+
+.count-in-basket,
+.count-in-basket-border,
+.count-in-basket-value {
+  position: absolute;
+}
+
+.count-in-basket {
+  top: -22px;
+  right: 5px;
+}
+
+.count-in-basket-value {
+  left: 6px;
+  top: 2px;
+  color: var(--var-icons-color);
+}
+
+.active-language {
+  color: var(--var-color-accent);
+}
+
+/* hero */
+
+.games-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.games-list-item {
+  position: relative;
+  height: 801px;
+  width: 351px;
+  background-size: cover;
+  background-position: center;
+}
+
+.game-link {
+  text-decoration: none;
+  color: var(--var-main-text-color);
+  /* font */
+  font-family: "MADE Outer Sans";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.img-item1 {
+  background-image: url(../images/hero/da-vinci.jpg);
+  background-size: contain;
+}
+
+.img-item2 {
+  background-image: url(../images/hero/mission-belveder.jpg);
+  background-size: cover;
+}
+
+.img-item3 {
+  background-image: url(../images/hero/school-of-magic.jpg);
+  background-size: cover;
+}
+
+.img-item4 {
+  background-image: url(../images/hero/the-unknown.jpg);
+  background-size: cover;
+}
+
+.img-item5 {
+  background-image: url(../images/hero/the-nun.jpg);
+  background-size: cover;
+}
+
+.item-gradient {
+  top: 0;
+  left: 0;
+  position: absolute;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0) 52.74%,
+    rgba(17, 13, 13, 0.9) 100%
+  );
+  height: 801px;
+  width: 351px;
+}
+
+.game-text {
+  position: absolute;
+  width: 246px;
+  height: 119.38px;
+  /* left: 60.27px; */
+  top: 630.91px;
+}
+
+.title-wrapper {
+  position: absolute;
+  width: 246px;
+  left: 60.27px;
+  bottom: 98.16px;
+
+  display: flex;
+  align-items: flex-end;
+}
+
+.game-title {
+  font-size: 36px;
+  line-height: 36px;
+}
+
+.game-category {
+  position: absolute;
+  /* width: 77px; */
+  height: 24px;
+  left: 60.27px;
+  bottom: 53.07px;
+}
+
+.icon-mask {
+  position: absolute;
+  left: 102%;
+  top: 35.83%;
+}
+
+/* limited propose */
+
+.cost-off {
+  width: 364.51px;
+  height: 85px;
+  position: absolute;
+  left: -2%;
+  top: 5%;
+
+  background-image: url(../images/tape.png);
+}
+
+.off-value {
+  font-family: "Morganite";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 56px;
+  line-height: 56px;
+  text-transform: uppercase;
+
+  position: absolute;
+  top: 15%;
+  left: 5%;
+}
+
+.off-wrapper {
+  position: absolute;
+  right: 5%;
+  top: 25%;
+  display: flex;
+  flex-direction: column;
+  text-align: end;
+}
+
+.game-category,
+.off-category {
+  font-weight: 250;
+  font-size: 14px;
+  line-height: 24px;
+}
